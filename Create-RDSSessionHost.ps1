@@ -27,7 +27,7 @@ Write-Output "Completed RDS Session Deployment"
 # Start-Sleep -Seconds 15
 
 Write-Output "Creating RDS Session Collection"
-New-RDSessionCollection -CollectionName "$($env:COMPUTERNAME).RDS.ENV" -SessionHost $hostname -CollectionDescription "$($env:COMPUTERNAME).RDS.ENV" -ConnectionBroker $hostname
+New-RDSessionCollection -CollectionName "$($Hostname).RDS.ENV" -SessionHost $hostname -CollectionDescription "$($Hostname).RDS.ENV" -ConnectionBroker $hostname
 Write-Output "Completed RDS Session Collection"
 
 Write-Output "Creating RDS Certificates"
