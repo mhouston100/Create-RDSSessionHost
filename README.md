@@ -28,7 +28,10 @@ Select the following features:
 After the restart, implement a 'Run Powershell Script' step with :
 
 Script Name:
-    Create-RDSSessionHost.ps1
-
+````
+Create-RDSSessionHost.ps1
+````
 Parameters:
-    -Password "somepassword"
+````
+-Password "somepassword"
+````
