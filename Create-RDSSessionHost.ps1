@@ -18,7 +18,7 @@ param (
 
 Import-Module RemoteDesktop
 
-$Hostname = "$($env:COMPUTERNAME).camden.nsw.gov.au"
+$Hostname = "$($env:COMPUTERNAME)"
 $convPassword = ConvertTo-SecureString -String $Password -AsPlainText -Force
 
 Write-Output "Creating RDS Session Deployment"
